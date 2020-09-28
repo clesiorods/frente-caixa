@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
-import Imagelink from './../../assets/images/fundomesa1920p.png';
+import Imagelink from './../../../assets/images/fundomesa1920p.png';
+import { Link } from 'react-router-dom';
 
 
 function Login() {
@@ -15,7 +16,9 @@ function Login() {
                 <br/>
                 <span>Precisa de ajuda (?)</span>
                 <br/>
-                <button>Entrar</button>
+                <Link to="/main">
+                    <button>Entrar</button>
+                </Link>
             </div>
         </div>
     );

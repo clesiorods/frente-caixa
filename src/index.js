@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './index.css';
-import App from './App';
+import Login from './components/pages/Login';
+import ControlPanel from './components/pages/ControlPanel';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" exact={true} component={Login} />
+      <Route path="/main" component={ControlPanel} />
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 );
