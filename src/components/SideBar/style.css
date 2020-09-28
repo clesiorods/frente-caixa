@@ -1,10 +1,10 @@
 nav {
    position: absolute;
-
+   top: 20vh;
    color: white;
 }
 
-li {
+li.menu_item {
    background-color: rgba(23, 24, 31, 0.637);
    width: 20vw;
    border-left:rgb(251, 70, 37) solid 4px;

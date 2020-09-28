@@ -7,7 +7,7 @@ import BG from './../../../assets/images/fundomesa1920p.png';
 
 function ControlPanel() {
    return(
-      <div>
+      <div id='cp_exp'>
          <img id='fundo' src={BG} alt='Plano de Fundo'/>
          <div id='control_panel'>
          </div>
